@@ -1,0 +1,119 @@
+.blog-section-mc .card {
+	height: 100%;
+	padding: 0;
+}
+
+.blog-section-standard .card.bordered .post-thumbnail img {
+	margin: -1px -1px 0 -1px;
+	width: calc(100% + 2px);
+}
+
+.contact-1-mc {
+	background-image: url("./images/cropped-cropped-background-2726039-6x4.jpg");
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+}
+
+.contact-1-mc>div:not([class*="section-separator"]) {
+	position: relative;
+	z-index: 1;
+}
+
+.contact-1-mc:before {
+	background-color: rgba(26, 26, 26, .48);
+	content: ' ';
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.features-16-card-bordered-mc .card img.face {
+	margin: -1px -1px 0 -1px;
+	max-width: max-content;
+	width: calc(100% + 2px);
+}
+
+.features-16-card-bordered-mc .read-more-container {
+	border-top: 1px solid #eaeaea;
+	padding-bottom: 0;
+	padding-top: 1rem;
+}
+
+.features-ov-4-mc .fa.shadow-large-black:not(.round):not(.bordered),.overlappable-4-mc .fa.shadow-large-black:not(.round):not(.bordered) {
+	box-shadow: none;
+}
+
+.portfolio-5-mc {
+	background-color: #03a9f4;
+}
+
+.portfolio-5-mc .portfolio-icon {
+	color: #ffffff;
+	opacity: .9;
+	transition: all 0.2s linear;
+}
+
+.portfolio-5-mc a:hover .portfolio-icon {
+	opacity: 1;
+}
+
+.portfolio-5-mc .contentswap-effect .swap-inner * {
+	text-align: center !important;
+}
+
+.portfolio-5-mc .card.bordered {
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14),
+0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .2);
+	border: none;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14),
+0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.portfolio-5-mc .card>.space-top {
+	padding-bottom: 1rem;
+}
+
+.portfolio-5-mc .card>.space-top>*:last-child {
+	margin-bottom: 0;
+}
+
+.team-5-mc .face {
+	margin: .5rem 0;
+	min-width: 80px;
+	width: 25%;
+}
+
+.team-5-mc .social-icons-group i.fa {
+	font-size: 1.4rem;
+	margin: 0 .3rem;
+}
+
+.testimonials-5-mc .quotation-icon {
+	display: flex;
+	flex-direction: column;
+}
+
+.testimonials-5-mc .content-left-sm .quotation-icon {
+	align-items: flex-start;
+}
+
+.testimonials-5-mc .content-center-sm .quotation-icon {
+	align-items: center;
+}
+
+.testimonials-5-mc .content-right-sm .quotation-icon {
+	align-items: flex-end;
+}
+
+@media only screen and (min-width: 768px){ 
+
+	.team-5-mc .face {
+		width: 37.5%;
+	}
+	
+ }
