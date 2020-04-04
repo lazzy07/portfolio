@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>lazzy07 &#8211; @lazzy07&#039;s portfolio</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="lazzy07 &raquo; Feed" href="https://lazzy07.github.io/portfolio/feed" />
+<link rel="alternate" type="application/rss+xml" title="lazzy07 &raquo; Comments Feed" href="https://lazzy07.github.io/portfolio/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/lazzy07.github.io\/portfolio\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='companion-bundle-css'   data-href='https://lazzy07.github.io/portfolio/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.110' type='text/css' media='all' />
+<link rel='stylesheet' id='companion-page-css-css'  href='https://lazzy07.github.io/portfolio/wp-content/themes/highlight/customizer/sections/content.css?ver=1.6.110' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://lazzy07.github.io/portfolio/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-parent-css'  href='https://lazzy07.github.io/portfolio/wp-content/themes/mesmerize/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='https://lazzy07.github.io/portfolio/wp-content/themes/highlight/style.min.css?ver=1.0.13' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.7;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header-homepage .header-description-row{padding-top:20%;padding-bottom:20%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://lazzy07.github.io/portfolio/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://lazzy07.github.io/portfolio/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='https://lazzy07.github.io/portfolio/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://lazzy07.github.io/portfolio/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://lazzy07.github.io/portfolio/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='https://lazzy07.github.io/portfolio/wp-content/uploads/elementor/css/global.css?ver=1581150633' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'   data-href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://lazzy07.github.io/portfolio/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='https://lazzy07.github.io/portfolio/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://lazzy07.github.io/portfolio/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lazzy07.github.io/portfolio/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://lazzy07.github.io/portfolio/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="https://lazzy07.github.io/portfolio/" />
+<link rel='shortlink' href='https://lazzy07.github.io/portfolio/' />
+<link rel="alternate" type="application/json+oembed" href="https://lazzy07.github.io/portfolio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flazzy07.github.io%2Fportfolio%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://lazzy07.github.io/portfolio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flazzy07.github.io%2Fportfolio%2F&#038;format=xml" />
+    <style data-name="header-overlap-with">
+        @media screen and (min-width: 768px) {
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .header-homepage {
+                padding-bottom: 95px;
+            }
+
+            .mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:not([class*="section-separator"]) {
+                margin-top: -95px;
+            }
+        }
+    </style>
+    
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+	display: none;
+}		</style>
+		    <style id="page-content-custom-styles">
+            </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #ffffff;
+        }
+    </style>
+    </head>
+
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-6 mesmerize-front-page elementor-default elementor-page elementor-page-6 mesmerize-content-no-padding ">
+
+
+<div id="page-top" class="header-top homepage">
+        <div class="navigation-bar homepage"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper ">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="https://lazzy07.github.io/portfolio/">lazzy07</a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-26"><a href="https://lazzy07.github.io/portfolio/" aria-current="page" data-ps2id-api="true">Home</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://lazzy07.github.io/portfolio/projects" data-ps2id-api="true">Projects</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://lazzy07.github.io/portfolio/blog" data-ps2id-api="true">Blog</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="https://lazzy07.github.io/portfolio/">lazzy07</a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-26"><a href="https://lazzy07.github.io/portfolio/" aria-current="page" data-ps2id-api="true">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://lazzy07.github.io/portfolio/projects" data-ps2id-api="true">Projects</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://lazzy07.github.io/portfolio/blog" data-ps2id-api="true">Blog</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+            <div class="header-wrapper">
+            <div  class='header-homepage  color-overlay' style='; min-height:100vh'>
+                                                
+    <div class="header-description gridContainer content-on-center">
+        <div class="row header-description-row middle-sm">
+    <div class="header-content header-content-centered col-md col-xs-12">
+        <div class="align-holder center">
+            <h1 class="hero-title">Hi, I'm Lasantha Madushan</h1><p class="header-subtitle">I'm a programmer / Game Developer / 3D Graphic Artist / UX Designer / Fullstack Web Developer</p><div data-dynamic-mod-container class="header-buttons-wrapper"><a class="button big color1 round customize-unpreviewable" target="_blank" href="http://github.com/lazzy07" >Github Account</a><a class="button big color-white round outline customize-unpreviewable" target="_blank" href="https://www.artstation.com/lazzy07" >Artstation Account</a></div>        </div>
+    </div>
+</div>
+    </div>
+    
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                    
+                                        <div class="header-homepage-arrow-c" >
+            <span class="header-homepage-arrow move-down-bounce"> <i class="fa arrow fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </div>
+                    </div>
+        </div>
+        
+    <div class="page-content">
+        <div class="content">
+            <div  id="about-1" style="background-color: #f5fafd;" data-label="About" data-id="about-images-right-section-mc" data-export-id="about-images-right-section-mc" data-bullets-visibility="true" data-category="about" class="about-images-right-section-mc content-section content-section-spacing _mPS2id-t"><div  class="gridContainer"> <div  class="row middle-sm text-center"><div  class="col-sm-5 content-left-sm" data-type="column"> <h5  class="">WHAT I DO</h5> <h2  class="">I provide <br > <span  style="font-family: Playfair Display,sans-serif; font-weight: 700; font-style: italic;" href="#">creative solutions</span> for all your needs!</h2> <p  class="">I’m one of the best 3D graphic designers of Sri Lanka who has handled lots of projects including 3D visualization projects, web development projects and also my favorite, game development projects. Im an honest, innovative and a reliable person.</p> <a  class="button color1" href="https://lazzy07.000webhostapp.com/projects" target="_self" data-cp-link="1">CHECK OUT MY PROJECTS</a></div> <div  class="col-sm-7 space-bottom-xs"><div  class="image-group-side-3-img"> <a  data-cp-link="1" href="#" target="_self"><img  class="topimg shadow-large" src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-intro.jpg" alt="" title="cropped-logo_ss.png"></a> <img  class="rightimg shadow-large" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-IMG_0546-1-2.jpg" alt="" title="cropped-IMG_0546-1-2.jpg"> <div  class="leftimg"> <img  class="shadow-large" src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-spalsh_screen.jpg" alt="" title="cropped-spalsh_screen.jpg"></div> </div></div> </div></div> </div><div  data-label="Im really god at" data-id="clients--1" data-export-id="clients-1" data-category="clients" class="clients-1 content-section content-section-spacing" id="im-really-god-at" style="background-color: rgb(245, 250, 253);"><div  class="gridContainer"> <div  class="row middle-sm"><div  data-type="column" class="col-sm-6 space-bottom-xs"> <h2  class="font-700">I’m really good at</h2> <p  class="lead">I love working with these technologies</p></div> <div  class="col-sm-6"><div  data-type="row" class="row spaced-cols center-xs padding-lr">   <div  class="col-xs-3"> <img  src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-Unreal_Engine_Logo.png" class="desaturate" alt="" title="cropped-Unreal_Engine_Logo.png"><img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/Unreal_Engine_Logo.png" alt="" title="Unreal_Engine_Logo"></div> <div  class="col-xs-3"><img  class="custom-image" src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-Logo_Blender.png" alt="" title="cropped-Logo_Blender.png"> <img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/nodejs-new-pantone-black.png" alt="" title="nodejs-new-pantone-black"></div><div  class="col-xs-3"> <img  src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/nodejs-new-pantone-black.png" class="desaturate" alt="" title="nodejs-new-pantone-black"><img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/Untitled-3.png" alt="" title="Untitled-3"></div><div  class="col-xs-3"> <img  src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-1.png" class="desaturate" alt="" title="mongodb-logo-rgb-j6w271g1xn"><img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-Logo_Blender-1.png" alt="" title="cropped-Logo_Blender-1.png"></div> </div></div> </div></div> </div><div  data-label="Game Jam" data-id="about--1" data-export-id="about-4" data-category="about" class="about-4 content-section content-section-spacing" id="game-jam" style="background-color: rgb(245, 250, 253);"><div  class="gridContainer"> <div  class="row middle-sm text-center"><div  class="col-sm-5 space-bottom-xs" data-type="column">  <h2  class="">We made it to&nbsp;<br ><font  face="Playfair Display, sans-serif"><b ><i >Global game jam 2020
+</i></b></font>with Vulture Engine and Material Designer</h2> <p  class="" autocomplete="off">I gave an speech at Gloab Game Jam 2020 Colombo on Vulture Game Engine and Material Designer with my collegues Kaveeen H. and Isuru M. who are in my team of developing Vulture Engine</p> </div> <div  class="col-sm-7 flexbox center-xs middle-xs image-group-2-img"> <img  class="img-1 shadow-large" data-size="250x200" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2020/02/cropped-83990859_113908546832103_6991292312106041344_o-4.jpg" alt="" title="cropped-83990859_113908546832103_6991292312106041344_o-4.jpg" autocomplete="off"> <img  class="img-2 shadow-large" data-size="220x170" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2020/02/cropped-83701097_113908573498767_7045477666757017600_o-2.jpg" alt="" title="cropped-83701097_113908573498767_7045477666757017600_o-2.jpg"></div> </div></div> </div><div  id="portfolio-1" data-label="Portfolio" data-id="portfolio-5-mc" data-export-id="portfolio-5-mc" data-bullets-visibility="true" data-category="portfolio" class="portfolio-5-mc content-section content-section-spacing section-title-col-white-text bg-color1 _mPS2id-t"><div  class="gridContainer"> <div  class="row text-center"><div  class="section-title-col" data-type="column"> <h5  class="">MY WORK</h5> <h2  class="">Portfolio</h2> <p  class="lead">These are some projects I recently worked on, some of them are for other customers and some of them are for my self. I do these because I LOVE THESE PROJECTS !!</p></div> </div> <div  class="row space-bottom spaced-cols" data-type="row"> <div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-spalsh_screen-2.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#ground-zero" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Ground Zero</h5> <p  class="small italic">Ground zero is my first project (still working on). This is the first MOBA multiplayer game to be released in Sri Lanka, capturing lot of attention, our facebook page currently have more than 2000 subscribers</p></div> </div></div> </div> <div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2020/02/cropped-logo_with_text.png"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#ground-zero" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Vulture Engine</h5> <p  class="small italic">Vulture Engine is a game engine which built on top of openGL and its a multi purpose real time game engine. Less in size and simple to work with!</p></div> </div></div> </div><div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/08/sc01.png"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#ground-zero" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Material Designer</h5> <p  class="small italic">A software to create textures that fit to PBR Material Workflow. This software can be used by Artists which doesn’t know how to code or about image processing since this uses a Node Based Visual Scripting language that I created</p></div> </div></div> </div><div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-pollution.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#air-pollution" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Kandy Air Pllution Mapping</h5> <p  class="small italic">I was the team leader of the project to calculate and map the air pollution level of Kandy town as my project for Microcontroller architecture course (Computer Science, course code 206).
+</p></div> </div></div> </div><div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-intro-1.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#football" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Rugby / Football Match Organizer</h5> <p  class="small italic">This is a project I did with Angular 2 and Node js to help manage football or a rugby tounament
+</p></div> </div></div> </div> <div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-render_18-1.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#cricket" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Cricket Tournament Manager</h5> <p  class="small italic">Laz engine is an advanced cricket match and tournament manager which powered using cloud database solution Firebase and also using React, Node js and Mongo DB</p></div> </div></div> </div><div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-IMG_0157-1.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#architecture" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Mini City Architecture Visualization
+<br >Project</h5> <p  class="small italic">Architecture Visualization project for the BCAS university Kandy to help them visualize an upcoming modern shopping complex called, “Mini City”.</p></div> </div></div> </div><div  class="col-xs-12 col-sm-4 text-center"> <div  class="card no-padding bordered"> <div  data-hover-fx="portfolio-6" class="contentswap-effect contentswap-overlay" style="float: none; margin: 0; width: 100%;"> <div  class="initial-image" style="float: none; margin: 0;"> <img  data-size="500x333" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-IMG_0157-3.jpg"></div> <div  class="overlay bg-color6" style="display: block; transition: opacity 800ms ease 0s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease;"></div> <div  class="swap-inner col-xs-12" style="display: block; transition: all 800ms ease 0s; background-color: rgba(0,0,0,0); margin-top: 0;"> <div  class="row full-height-row middle-xs middle-sm"> <div  class="col-xs-12 text-center content-holder"> <a  class="button small color2" href="https://lazzy07.000webhostapp.com/projects/#stingrays" target="_self" data-cp-link="1">View the project</a></div> </div></div> </div> <div  class="col-xs-12"> <div  class="space-bottom space-top" data-type="column"> <h5  class="">Stingrays.lk
+<br >The official website</h5> <p  class="small italic">www.stingrays.lk 
+<br >is a website I created / currently managing on behalf of 
+<br >Stingrays Swimming School – Kandy.
+</p></div> </div></div> </div></div> <div  class="row"><div  data-type="column" class="col-xs-12 text-center"> <a  class="button color2 y-move" href="https://lazzy07.000webhostapp.com/projects" target="_self" data-cp-link="1">View Portfolio</a></div> </div></div> </div><div  id="what-i-can-do-1" style="background-color: #ffffff;" data-label="What I Can Do" data-id="content-8-mc" data-export-id="content-8-mc" data-category="content" class="content-8-mc content-section content-section-spacing"><div  class="gridContainer"> <div  class="row middle-sm"><div  class="col-sm-6 space-bottom-xs space-top-xs" data-type="column"> <img  class="shadow-large" src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-spalsh_screen-3.jpg" alt="" title="cropped-spalsh_screen-3.jpg"><img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/IMG_0171.jpg" alt="" title="IMG_0171"></div> <div  class="col-sm-6" data-type="column"><h2  class="">Game Development</h2> <p  class="" autocomplete="off">I’m a Game developer who likes to work for a AAA game development company. I have already finished a game and currently working  on a famous game project called, “Ground Zero”</p> <a  class="button color1" href="https://lazzy07.000webhostapp.com/projects" target="_self" data-cp-link="1">Projects</a></div> </div></div> </div><div  id="what-i-can-do" style="background-color: #f5fafd;" data-label="What I Can Do" data-id="content-7-mc" data-export-id="content-7-mc" data-category="content" class="content-7-mc content-section content-section-spacing"><div  class="gridContainer"> <div  class="row middle-sm"><div  class="col-sm-6 space-bottom-xs" data-type="column"> <h2  class="">Fullstack Web Development</h2> <p  class="">I’m a full stack developer. I can handle all the work of databases, servers, systems engineering. (Mobile stack, a Web stack, or a native application stack).</p> <a  class="button color1" href="https://lazzy07.000webhostapp.com/projects" target="_self" data-cp-link="1">Projects</a></div> <div  class="col-sm-6" data-type="column"> <img  class="shadow-large" src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/05.jpg" alt="" title="05"><img  class="custom-image" src="https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/01.jpg" alt="" title="01"></div> </div></div> </div><div  data-label="Content" data-id="content--1" data-export-id="content-3" data-category="content" class="content-3 content-section content-section-spacing" id="content-1" style="background-color: rgb(245, 250, 253);"><div > <div  class="row middle-xs"><div  class="col-sm-7 full-col-left-padding full-col-right-padding"> <div  class="row"><div  data-type="column" class="space-bottom-small content-title-col"> <h5  class="">Graphic Designing</h5> <h2  class="">And I’m one of the best 3D graphic artists in Sri Lanka!</h2> <p  class="">I can transform your inspiration into realistic and high-quality 3D renderings.</p></div> </div> <div  class="row spaced-cols" data-type="row"> <div  class="col-xs-6" data-type="column"> <h5  class="">VR</h5> <p  class="">I can do VR programming with Unreal Engine</p></div> <div  class="col-xs-6" data-type="column"><h5  class="">Photorealism</h5> <p  class="">Using my knowledge on physics, I can create photorealistic renders.</p></div> <div  class="col-xs-6" data-type="column"><h5  class="">PBR Materials</h5> <p  class="">I can create physical based rendering materials which gives 3d models a realistic look and feel</p></div> <div  class="col-xs-6" data-type="column"><h5  class="">Simulations</h5> <p  class="">I can do accurate physics simulations using python / blender and also Unreal Engine</p><a  class="button blue" href="https://lazzy07.000webhostapp.com/projects/#graphic-designing" target="_self" data-cp-link="1">My 3D Renders</a></div> </div></div> <div  class="col-sm-5 bg-image shadow-large-black revert-classes-holder" data-bg="image" style="background-image: url(&quot;https://lazzy07.github.io/portfolio/wp-content/uploads/2019/02/cropped-IMG_0546-1-3.jpg&quot;);"></div></div> </div></div><div  id="features-2" style="background-color: #ffffff;" data-label="Features" data-id="features-ov-4-mc" data-export-id="features-ov-4-mc" data-category="features" class="features-ov-4-mc content-section content-section-spacing"><div  class="gridContainer"> <div  data-type="row" class="row spaced-cols text-center"><div  class="col-xs-12 col-sm-4 col-padding"> <a  data-cp-link="1" href="#" target="_self"><i  class="fa icon shadow-large-black aligncenter color1 fa-gamepad reverse round large"></i></a> <div  data-type="column" class=""> <h5  class="font-400">GAME DEVELOPMENT</h5> <p  class="">I’m one of the best game developers in Sri Lanka, who can do computer graphic programming/ UX design/ Game coding&nbsp;</p></div> </div> <div  class="col-xs-12 col-sm-4 col-padding"> <i  class="fa icon shadow-large-black aligncenter color2 fa-code reverse round large"></i> <div  data-type="column" class=""><h5  class="font-400">WEB DEVELOPMENT</h5> <p  class="">I’m a full stack developer. I can handle all the work of databases, servers, systems engineering. (Mobile stack, a Web stack, or a native application stack).</p></div> </div> <div  class="col-xs-12 col-sm-4 col-padding"> <i  class="fa icon shadow-large-black aligncenter color4 fa-desktop reverse round large"></i> <div  data-type="column" class=""><h5  class="font-400">GRAPHIC DESIGNING</h5> <p  class="">I’m one of the best 3d render artists in Sri Lanka, I have created “jaw dropping” graphic designs using Blender and Unreal engine.</p></div> </div></div> </div></div><div  id="testimonials-1" style="background-color: #ffffff;" data-label="Testimonials" data-id="testimonials-5-mc" data-export-id="testimonials-5-mc" data-category="testimonials" class="testimonials-5-mc content-section content-section-spacing"><div  class="gridContainer"> <div  class="row"><div  data-type="column" class="section-title-col"> <h5  class="">AWESOME CLIENTS</h5> <h2  class="">Client Testimonials</h2> <p  class="lead">Don’t take my word for it – here’s what my clients say:</p></div> </div> <div  class="row spaced-cols content-center-sm" data-type="row"> <div  class="col-sm-4"> <div  class="card y-move bordered" data-type="column"> <i  class="fa fa-quote-right icon color1 small quotation-icon"></i> <p  class="text-center" autocomplete="off">Thank you for the work you did with the rebranding of the website stingrays.lk. We have been getting very good feedback on the new website, The web site, in particular, is proving very beneficial. Having a mobile-first site with an integrated content management system is proving to be very useful.</p> <img  src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-Avantha.jpg" class="round icon" alt="" title="cropped-Avantha.jpg"> <h6  class="">Mr. Avantha Ranmal Dias Weerasinha</h6> <p  class="small italic">Founder / Head Coach Stingrays Swimming School<br ><br >Bsc. Sports Coaching – UK / L2 Swimming Teacher – UK / L3 Personal Trainer – UK</p></div> </div> <div  class="col-sm-4"> <div  class="card y-move bordered" data-type="column"> <i  class="fa fa-quote-right icon color1 small quotation-icon"></i> <p  class="text-center">Thank you so much for all the hard work you put into the project conducted by batch of ’15. Your 3d rendering skills are remarkable and the whole project was a success because of the vizualization you brought foward. The interior design and the 3D structure is better than I have seen in many other attempts at similar projects and the audience who viewed it was also thoroughly impressed.</p> <img  src="https://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-IMG-20190221-WA0000.jpg" class="round icon" autocomplete="off" alt="" title="cropped-IMG-20190221-WA0000.jpg"> <h6  class="">Zameen Zarook</h6> <p  class="small italic">MIC of the project “Minicity”</p></div> </div> </div> </div></div>        </div>
+    </div>
+
+	<div  class='footer footer-simple'>
+    <div  class='footer-content center-xs'>
+        <div class="gridContainer">
+	        <div class="row middle-xs footer-content-row">
+	            <div class="footer-content-col col-xs-12">
+	                    <p  class="copyright">&copy;&nbsp;&nbsp;2020&nbsp;lazzy07.&nbsp;Built using WordPress and the <a target="_blank" href="https://extendthemes.com/go/built-with-highlight/" class="mesmerize-theme-link">Highlight Theme</a></p>	            </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+	</div>
+
+        <div id="side-navigation" class="side-navigation">
+            
+            
+            <ul data-type="active" data-preset="preset-2" data-after-scroll="true">
+                <li class="hero-bullet ">
+                    <a href="#page-top">Top</a>
+                </li>
+            </ul>
+        </div>
+        
+        <script type='text/javascript'  defer="defer" src='https://lazzy07.github.io/portfolio/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.6.110'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*=#]:not([href=#])","autoSelectorMenuLinks":"true","excludeSelector":"a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion]","scrollSpeed":800,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":"180","dummyOffset":"false","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lazzy07.github.io/portfolio/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.6.6'></script>
+<script type='text/javascript'  defer="defer" src='https://lazzy07.github.io/portfolio/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='https://lazzy07.github.io/portfolio/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mesmerize_backstretch = {"images":["https:\/\/lazzy07.github.io\/portfolio\/wp-content\/uploads\/2020\/02\/83701097_113908573498767_7045477666757017600_o.jpg","https:\/\/lazzy07.github.io\/portfolio\/wp-content\/uploads\/2019\/02\/background_01.jpg","https:\/\/lazzy07.github.io\/portfolio\/wp-content\/uploads\/2019\/02\/final02.jpg","https:\/\/lazzy07.github.io\/portfolio\/wp-content\/uploads\/2019\/02\/IMG_0546.jpg","https:\/\/lazzy07.github.io\/portfolio\/wp-content\/uploads\/2019\/02\/render_17.jpg"],"duration":"3000","transitionDuration":"1000","animateFirst":""};
+/* ]]> */
+</script>
+<script type='text/javascript'  defer="defer" src='https://lazzy07.github.io/portfolio/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.0.13'></script>
+<script type='text/javascript' src='https://lazzy07.github.io/portfolio/wp-content/themes/highlight/assets/js/theme-child.js'></script>
+<script type='text/javascript'  defer="defer" src='https://lazzy07.github.io/portfolio/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+</body>
+</html>
