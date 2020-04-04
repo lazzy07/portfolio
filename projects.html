@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+	    <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>Projects &#8211; lazzy07</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="lazzy07 &raquo; Feed" href="http://localhost/wordpress/feed" />
+<link rel="alternate" type="application/rss+xml" title="lazzy07 &raquo; Comments Feed" href="http://localhost/wordpress/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-parent-css'  href='http://localhost/wordpress/wp-content/themes/mesmerize/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='http://localhost/wordpress/wp-content/themes/highlight/style.min.css?ver=1.0.13' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */@media screen and (min-width: 768px){.header{background-position:center center;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.7;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header-homepage .header-description-row{padding-top:20%;padding-bottom:20%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:15%;padding-bottom:15%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:80%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='http://localhost/wordpress/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='http://localhost/wordpress/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='http://localhost/wordpress/wp-content/uploads/elementor/css/global.css?ver=1581150633' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-27-css'  href='http://localhost/wordpress/wp-content/uploads/elementor/css/post-27.css?ver=1581150633' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'   data-href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://localhost/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://localhost/wordpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/wordpress/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="http://localhost/wordpress/projects" />
+<link rel='shortlink' href='http://localhost/wordpress/?p=27' />
+<link rel="alternate" type="application/json+oembed" href="http://localhost/wordpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2Fprojects" />
+<link rel="alternate" type="text/xml+oembed" href="http://localhost/wordpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%2Fwordpress%2Fprojects&#038;format=xml" />
+        <style data-name="header-gradient-overlay">
+            .header .background-overlay {
+                background: linear-gradient(135deg , rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+            }
+        </style>
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+	display: none;
+}		</style>
+		    <style id="page-content-custom-styles">
+            </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #ffffff;
+        }
+    </style>
+    </head>
+
+<body class="page-template-default page page-id-27 mesmerize-inner-page elementor-default elementor-page elementor-page-27">
+
+<div  id="page-top" class="header-top">
+		<div class="navigation-bar coloured-nav"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper ">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="http://localhost/wordpress/">lazzy07</a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-26"><a href="http://localhost/wordpress/" data-ps2id-api="true">Home</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-27 current_page_item menu-item-31"><a href="http://localhost/wordpress/projects" aria-current="page" data-ps2id-api="true">Projects</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://localhost/wordpress/blog" data-ps2id-api="true">Blog</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a class="text-logo" data-type="group"  data-dynamic-mod="true" href="http://localhost/wordpress/">lazzy07</a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-26"><a href="http://localhost/wordpress/" data-ps2id-api="true">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-27 current_page_item menu-item-31"><a href="http://localhost/wordpress/projects" aria-current="page" data-ps2id-api="true">Projects</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://localhost/wordpress/blog" data-ps2id-api="true">Blog</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+<div id="page" class="site">
+    <div class="header-wrapper">
+        <div  class='header  custom-mobile-image' style='; background-image:url(&quot;http://lazzy07.000webhostapp.com/wp-content/uploads/2019/02/cropped-background_01-2.jpg&quot;); background-color:#6a73da' data-parallax-depth='20'>
+            								    <div class="inner-header-description gridContainer">
+        <div class="row header-description-row">
+    <div class="col-xs col-xs-12">
+        <h1 class="hero-title">
+            Projects        </h1>
+                    <p class="header-subtitle">@lazzy07&#039;s portfolio</p>
+            </div>
+        </div>
+    </div>
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="gridContainer content">
+            <div id="post-27" class="post-27 page type-page status-publish hentry">
+  <div>
+   		<div data-elementor-type="wp-post" data-elementor-id="27" class="elementor elementor-27 elementor-bc-flex-widget" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-d1e97d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="d1e97d2" data-element_type="section" id="ground-zero" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e28fdf5 elementor-column elementor-col-100 elementor-top-column" data-id="e28fdf5" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<section class="elementor-element elementor-element-3da4da1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-inner-section" data-id="3da4da1" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e4a3fa1 elementor-column elementor-col-50 elementor-inner-column" data-id="e4a3fa1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0081dcd elementor-widget elementor-widget-image" data-id="0081dcd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="958" height="523" src="http://localhost/wordpress/wp-content/uploads/2019/02/spalsh_screen.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/spalsh_screen.jpg 958w, http://localhost/wordpress/wp-content/uploads/2019/02/spalsh_screen-300x164.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/spalsh_screen-768x419.jpg 768w" sizes="(max-width: 958px) 100vw, 958px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-8ceed4a elementor-column elementor-col-50 elementor-inner-column" data-id="8ceed4a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8334bad elementor-widget elementor-widget-heading" data-id="8334bad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Ground Zero - The Game</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cdc2289 elementor-widget elementor-widget-text-editor" data-id="cdc2289" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Ground zero &#8211; the hell is here is the first Multiplayer Battle Arena game to be released in Sri Lanka. Here&#8217;s a bit about the game.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-09f6d1d elementor-widget elementor-widget-button" data-id="09f6d1d" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://www.youtube.com/watch?v=O0EAZyi9Hc4" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-gamepad" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Official Trailer</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ed39f36 elementor-widget elementor-widget-button" data-id="ed39f36" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazantha/gz_tcp" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Code on GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<div class="elementor-element elementor-element-21c2026 elementor-invisible elementor-widget elementor-widget-image-gallery" data-id="21c2026" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-1 {
+				margin: auto;
+			}
+			#gallery-1 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 33%;
+			}
+			#gallery-1 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-1 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-1' class='gallery galleryid-27 gallery-columns-3 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="21c2026" href='http://localhost/wordpress/wp-content/uploads/2019/02/cropped-spalsh_screen-3.jpg'><img width="300" height="200" src="http://localhost/wordpress/wp-content/uploads/2019/02/cropped-spalsh_screen-3-300x200.jpg" class="attachment-medium size-medium" alt="" aria-describedby="gallery-1-86" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/cropped-spalsh_screen-3-300x200.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/cropped-spalsh_screen-3-768x511.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/cropped-spalsh_screen-3.jpg 786w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-86'>
+				Logo
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="21c2026" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa-300x169.jpg" class="attachment-medium size-medium" alt="" aria-describedby="gallery-1-115" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_sdasdsa.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-115'>
+				Login page
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="21c2026" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171-300x169.jpg" class="attachment-medium size-medium" alt="" aria-describedby="gallery-1-114" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0171.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-114'>
+				Wallpaper
+				</dd></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-7646e66 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="7646e66" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-5a2384a elementor-column elementor-col-16 elementor-top-column" data-id="5a2384a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4bb8803 elementor-invisible elementor-widget elementor-widget-image" data-id="4bb8803" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="184" src="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png 400w" sizes="(max-width: 300px) 100vw, 300px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f6d8a34 elementor-column elementor-col-16 elementor-top-column" data-id="f6d8a34" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8305ac6 elementor-invisible elementor-widget elementor-widget-image" data-id="8305ac6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="105" src="http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender-300x79.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-4ec3ffc elementor-column elementor-col-16 elementor-top-column" data-id="4ec3ffc" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-2a6d5fc elementor-invisible elementor-widget elementor-widget-image" data-id="2a6d5fc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="106" src="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-300x80.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-a28f4e3 elementor-column elementor-col-16 elementor-top-column" data-id="a28f4e3" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-91de68c elementor-invisible elementor-widget elementor-widget-image" data-id="91de68c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-2.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-2.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-2-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-2-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-6498911 elementor-column elementor-col-16 elementor-top-column" data-id="6498911" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8e2dfd1 elementor-invisible elementor-widget elementor-widget-image" data-id="8e2dfd1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-2535fbc elementor-column elementor-col-16 elementor-top-column" data-id="2535fbc" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-32cb05d elementor-invisible elementor-widget elementor-widget-image" data-id="32cb05d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-42f044f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="42f044f" data-element_type="section" id="football" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-2cccb3b elementor-column elementor-col-50 elementor-top-column" data-id="2cccb3b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-bbe9574 elementor-widget elementor-widget-image" data-id="bbe9574" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="570" src="http://localhost/wordpress/wp-content/uploads/2019/02/intro-1024x570.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/intro-1024x570.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/intro-300x167.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/intro-768x427.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/intro.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-1596d53 elementor-column elementor-col-50 elementor-top-column" data-id="1596d53" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-99520af elementor-widget elementor-widget-heading" data-id="99520af" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Football / Rugby Tournament Manager App</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9637171 elementor-widget elementor-widget-text-editor" data-id="9637171" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>This app was created using</p><p>Angular 2 / Node Js / Mongo DB, this app is capable of displaying industry standard TV layout designs with Team info, tournament info and also the score card and scoreboard.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-761691c elementor-widget elementor-widget-button" data-id="761691c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazzy07/7s_engine" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Code on GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-041a8ae elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="041a8ae" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-02c0f00 elementor-column elementor-col-100 elementor-top-column" data-id="02c0f00" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-e98521d elementor-widget elementor-widget-image-gallery" data-id="e98521d" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-2 {
+				margin: auto;
+			}
+			#gallery-2 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 33%;
+			}
+			#gallery-2 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-2 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-2' class='gallery galleryid-27 gallery-columns-3 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="e98521d" href='http://localhost/wordpress/wp-content/uploads/2019/02/intro2.jpg'><img width="300" height="167" src="http://localhost/wordpress/wp-content/uploads/2019/02/intro2-300x167.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/intro2-300x167.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/intro2-768x427.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/intro2-1024x570.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/intro2.jpg 1361w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="e98521d" href='http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup.jpg'><img width="300" height="167" src="http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup-300x167.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup-300x167.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup-768x427.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup-1024x570.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/2teamlinup.jpg 1361w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="e98521d" href='http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard.jpg'><img width="300" height="167" src="http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard-300x167.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard-300x167.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard-768x427.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard-1024x570.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/scoreboard.jpg 1361w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-f946f50 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f946f50" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-c02a3d9 elementor-column elementor-col-20 elementor-top-column" data-id="c02a3d9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-89f613e elementor-invisible elementor-widget elementor-widget-image" data-id="89f613e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="184" src="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png 400w" sizes="(max-width: 300px) 100vw, 300px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-0005098 elementor-column elementor-col-20 elementor-top-column" data-id="0005098" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a3085af elementor-invisible elementor-widget elementor-widget-image" data-id="a3085af" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="300" src="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-1-300x300.png" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-1-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-1-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-1.png 400w" sizes="(max-width: 300px) 100vw, 300px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-955630a elementor-column elementor-col-20 elementor-top-column" data-id="955630a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-e167cc9 elementor-invisible elementor-widget elementor-widget-image" data-id="e167cc9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f939e4d elementor-column elementor-col-20 elementor-top-column" data-id="f939e4d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-815e48f elementor-invisible elementor-widget elementor-widget-image" data-id="815e48f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-5.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-5.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-5-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-5-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-874af3d elementor-column elementor-col-20 elementor-top-column" data-id="874af3d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-572f8c2 elementor-invisible elementor-widget elementor-widget-image" data-id="572f8c2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-7.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-7.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-7-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-7-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-a14d8af elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="a14d8af" data-element_type="section" id="kamu" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0003b8d elementor-column elementor-col-50 elementor-top-column" data-id="0003b8d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-23e668b elementor-widget elementor-widget-image" data-id="23e668b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="502" src="http://localhost/wordpress/wp-content/uploads/2019/02/05-1024x502.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/05-1024x502.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/05-300x147.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/05-768x376.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/05.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-ddc9b4e elementor-column elementor-col-50 elementor-top-column" data-id="ddc9b4e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0efa2c3 elementor-widget elementor-widget-heading" data-id="0efa2c3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">kamu.lk (ongoing)</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-655dfea elementor-widget elementor-widget-text-editor" data-id="655dfea" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>kamu.lk is a food companion app I&#8217;m currently working on to connect food lovers together!</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-08f0554 elementor-widget elementor-widget-button" data-id="08f0554" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazzy07/kamu_resturent_web" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Code on GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-085ffab elementor-widget elementor-widget-button" data-id="085ffab" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://kamu-server.firebaseapp.com/resturant/login" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-internet-explorer" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Go to the webpage</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-d6a772e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="d6a772e" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-de683c7 elementor-column elementor-col-100 elementor-top-column" data-id="de683c7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-c22f019 elementor-widget elementor-widget-image-gallery" data-id="c22f019" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-3 {
+				margin: auto;
+			}
+			#gallery-3 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 33%;
+			}
+			#gallery-3 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-3 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-3' class='gallery galleryid-27 gallery-columns-3 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="c22f019" href='http://localhost/wordpress/wp-content/uploads/2019/02/01.jpg'><img width="300" height="147" src="http://localhost/wordpress/wp-content/uploads/2019/02/01-300x147.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/01-300x147.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/01-768x376.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/01-1024x502.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/01.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="c22f019" href='http://localhost/wordpress/wp-content/uploads/2019/02/04.jpg'><img width="300" height="147" src="http://localhost/wordpress/wp-content/uploads/2019/02/04-300x147.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/04-300x147.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/04-768x376.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/04-1024x502.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/04.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="c22f019" href='http://localhost/wordpress/wp-content/uploads/2019/02/02.jpg'><img width="300" height="147" src="http://localhost/wordpress/wp-content/uploads/2019/02/02-300x147.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/02-300x147.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/02-768x376.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/02-1024x502.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/02.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-706a88d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="706a88d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-55e36dc elementor-column elementor-col-16 elementor-top-column" data-id="55e36dc" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-83f0ed4 elementor-invisible elementor-widget elementor-widget-image" data-id="83f0ed4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="245" src="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-1a723b9 elementor-column elementor-col-16 elementor-top-column" data-id="1a723b9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-09f5d32 elementor-invisible elementor-widget elementor-widget-image" data-id="09f5d32" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-29fbdc7 elementor-column elementor-col-16 elementor-top-column" data-id="29fbdc7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-782f06b elementor-invisible elementor-widget elementor-widget-image" data-id="782f06b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-49983a3 elementor-column elementor-col-16 elementor-top-column" data-id="49983a3" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-676220a elementor-invisible elementor-widget elementor-widget-image" data-id="676220a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-9.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-9.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-9-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-9-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-9701bb7 elementor-column elementor-col-16 elementor-top-column" data-id="9701bb7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d8b8945 elementor-invisible elementor-widget elementor-widget-image" data-id="d8b8945" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-fb4fa96 elementor-column elementor-col-16 elementor-top-column" data-id="fb4fa96" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-754fb0a elementor-invisible elementor-widget elementor-widget-image" data-id="754fb0a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-11.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-11.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-11-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-11-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-2ede052 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="2ede052" data-element_type="section" id="stingrays" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-2b41bcb elementor-column elementor-col-50 elementor-top-column" data-id="2b41bcb" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8314d50 elementor-widget elementor-widget-image" data-id="8314d50" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="549" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-3-1024x549.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-3-1024x549.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-3-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-3-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-3.jpg 1536w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-78a927a elementor-column elementor-col-50 elementor-top-column" data-id="78a927a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-91fac4d elementor-widget elementor-widget-heading" data-id="91fac4d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">stingrays.lk</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-975ce0f elementor-widget elementor-widget-text-editor" data-id="975ce0f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>stingrays.lk is the official website I created for, Stingrays Swimming School &#8211; Kandy. <strong>Because of ethical reasons, code cannot be shared</strong></p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-32f8106 elementor-widget elementor-widget-button" data-id="32f8106" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="stingrays.lk" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Go to stingrays.lk</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-fb9e7cb elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="fb9e7cb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3caf509 elementor-column elementor-col-33 elementor-top-column" data-id="3caf509" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f9dc6a1 elementor-invisible elementor-widget elementor-widget-image" data-id="f9dc6a1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-ad3a0ef elementor-column elementor-col-33 elementor-top-column" data-id="ad3a0ef" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-db5a055 elementor-invisible elementor-widget elementor-widget-image" data-id="db5a055" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-08220d3 elementor-column elementor-col-33 elementor-top-column" data-id="08220d3" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-663bbed elementor-invisible elementor-widget elementor-widget-image" data-id="663bbed" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-605c76b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="605c76b" data-element_type="section" id="x-ray" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e4d46a9 elementor-column elementor-col-100 elementor-top-column" data-id="e4d46a9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d070a6a elementor-widget elementor-widget-heading" data-id="d070a6a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Artificial Intelligence Project defected X- Ray finder (Automated System)</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-dc0e4e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="dc0e4e5" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-018c8ca elementor-column elementor-col-100 elementor-top-column" data-id="018c8ca" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a60e44f elementor-widget elementor-widget-text-editor" data-id="a60e44f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>This is an AI project I did, using a dataset from keggle.com, which is an image database with X-rays with normal condition and with cases of pneumonia. This AI can categorize normal and pneaumonia X-rays</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c469fb4 elementor-align-center elementor-widget elementor-widget-button" data-id="c469fb4" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazzy07/x_ray_defected" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Code on GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-be15dbf elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="be15dbf" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-dc199bf elementor-column elementor-col-100 elementor-top-column" data-id="dc199bf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ed0ff11 elementor-widget elementor-widget-image-gallery" data-id="ed0ff11" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-4 {
+				margin: auto;
+			}
+			#gallery-4 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-4 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-4 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-4' class='gallery galleryid-27 gallery-columns-2 gallery-size-thumbnail'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="ed0ff11" href='http://localhost/wordpress/wp-content/uploads/2019/02/NORMAL2-IM-1427-0001.jpeg'><img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/NORMAL2-IM-1427-0001-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-4-167" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-4-167'>
+				Normal
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="ed0ff11" href='http://localhost/wordpress/wp-content/uploads/2019/02/person1946_bacteria_4874.jpeg'><img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/person1946_bacteria_4874-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-4-168" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-4-168'>
+				Pneumonia
+				</dd></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-920f157 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="920f157" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-588c70c elementor-column elementor-col-33 elementor-top-column" data-id="588c70c" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-acf10c5 elementor-invisible elementor-widget elementor-widget-image" data-id="acf10c5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-17-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-17-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-17-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-17.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-8ff3215 elementor-column elementor-col-33 elementor-top-column" data-id="8ff3215" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0481399 elementor-invisible elementor-widget elementor-widget-image" data-id="0481399" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-15-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-15-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-15-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-15.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-a7f4b8e elementor-column elementor-col-33 elementor-top-column" data-id="a7f4b8e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-953f93b elementor-invisible elementor-widget elementor-widget-image" data-id="953f93b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-16-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-16-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-16-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-16.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-18c90ec elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="18c90ec" data-element_type="section" id="air-pollution" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1bc229c elementor-column elementor-col-50 elementor-top-column" data-id="1bc229c" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-c18a357 elementor-widget elementor-widget-image" data-id="c18a357" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="576" src="http://localhost/wordpress/wp-content/uploads/2019/02/pollution-1024x576.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/pollution-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/pollution-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/pollution-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/pollution.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-645d88a elementor-column elementor-col-50 elementor-top-column" data-id="645d88a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a6f31e3 elementor-widget elementor-widget-heading" data-id="a6f31e3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Air pollution mapping - Kandy city</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9cfc439 elementor-widget elementor-widget-text-editor" data-id="9cfc439" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>This is a data visualization project, and I was the team leader of this project. We mapped CO2, CO and Noise levels of Kandy town and mapped them on a map, using software we made and sensors we assembled together.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ccd3851 elementor-widget elementor-widget-button" data-id="ccd3851" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://kandy-pollution.firebaseapp.com" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Go to the website</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3e163bf elementor-widget elementor-widget-button" data-id="3e163bf" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazzy07/pollution_mapping" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Go to GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-a00798e elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="a00798e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-015eef0 elementor-column elementor-col-16 elementor-top-column" data-id="015eef0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0f4621d elementor-invisible elementor-widget elementor-widget-image" data-id="0f4621d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="245" src="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png" class="attachment-medium_large size-medium_large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-22ef0ed elementor-column elementor-col-16 elementor-top-column" data-id="22ef0ed" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-1c4731c elementor-invisible elementor-widget elementor-widget-image" data-id="1c4731c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f5c4e5a elementor-column elementor-col-16 elementor-top-column" data-id="f5c4e5a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ddc7935 elementor-invisible elementor-widget elementor-widget-image" data-id="ddc7935" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="106" src="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-300x80.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-56ff9f0 elementor-column elementor-col-16 elementor-top-column" data-id="56ff9f0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d0f89ea elementor-invisible elementor-widget elementor-widget-image" data-id="d0f89ea" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-92186e4 elementor-column elementor-col-16 elementor-top-column" data-id="92186e4" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-35a6dc2 elementor-invisible elementor-widget elementor-widget-image" data-id="35a6dc2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-40fb5fa elementor-column elementor-col-16 elementor-top-column" data-id="40fb5fa" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6c46ade elementor-invisible elementor-widget elementor-widget-image" data-id="6c46ade" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-18.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-18.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-18-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-18-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-463a85d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="463a85d" data-element_type="section" id="cricket" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0e3721d elementor-column elementor-col-50 elementor-top-column" data-id="0e3721d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-abf9449 elementor-widget elementor-widget-image" data-id="abf9449" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="492" src="http://localhost/wordpress/wp-content/uploads/2019/02/render_18-1024x492.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render_18-1024x492.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render_18-300x144.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render_18-768x369.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render_18.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-a513583 elementor-column elementor-col-50 elementor-top-column" data-id="a513583" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6ecefb5 elementor-widget elementor-widget-heading" data-id="6ecefb5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Cricket Match Manager and <br>scoreboard-to-mobile app</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cf0c8f4 elementor-widget elementor-widget-text-editor" data-id="cf0c8f4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>This solution is to make hard process of scoring a cricket match and also to provide viewers real time score to their mobile just by following a link</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b7b2af7 elementor-widget elementor-widget-button" data-id="b7b2af7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://github.com/lazzy07/laz_engine" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+									<i class="fa fa-github" aria-hidden="true"></i>
+							</span>
+						<span class="elementor-button-text">Go to GITHUB</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-bdd1ebf elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="bdd1ebf" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-dc91cdf elementor-column elementor-col-100 elementor-top-column" data-id="dc91cdf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-1563376 elementor-widget elementor-widget-image-gallery" data-id="1563376" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-5 {
+				margin: auto;
+			}
+			#gallery-5 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 25%;
+			}
+			#gallery-5 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-5 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-5' class='gallery galleryid-27 gallery-columns-4 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="1563376" href='http://localhost/wordpress/wp-content/uploads/2019/02/crick_04.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/crick_04-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/crick_04-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_04-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_04-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_04.jpg 1920w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="1563376" href='http://localhost/wordpress/wp-content/uploads/2019/02/crick_03.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/crick_03-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/crick_03-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_03-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_03-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_03.jpg 1920w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="1563376" href='http://localhost/wordpress/wp-content/uploads/2019/02/crick.jpg'><img width="300" height="157" src="http://localhost/wordpress/wp-content/uploads/2019/02/crick-300x157.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/crick-300x157.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/crick-768x401.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/crick-1024x535.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/crick.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="1563376" href='http://localhost/wordpress/wp-content/uploads/2019/02/crick_02.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/crick_02-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/crick_02-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_02-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_02-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/crick_02.jpg 1920w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-5a715df elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="5a715df" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-15129ea elementor-column elementor-col-20 elementor-top-column" data-id="15129ea" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9e1e61a elementor-widget elementor-widget-image" data-id="9e1e61a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-8-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-b26b5b9 elementor-column elementor-col-20 elementor-top-column" data-id="b26b5b9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a310c9c elementor-widget elementor-widget-image" data-id="a310c9c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-6-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-fc9ae6b elementor-column elementor-col-20 elementor-top-column" data-id="fc9ae6b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ba141ac elementor-widget elementor-widget-image" data-id="ba141ac" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="245" src="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/nodejs-new-pantone-black-300x184.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-b32a2df elementor-column elementor-col-20 elementor-top-column" data-id="b32a2df" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-7ac7be5 elementor-widget elementor-widget-image" data-id="7ac7be5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="106" src="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/mongodb-logo-rgb-j6w271g1xn-300x80.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-173d40b elementor-column elementor-col-20 elementor-top-column" data-id="173d40b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3e7ef88 elementor-widget elementor-widget-image" data-id="3e7ef88" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-1-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b99e8d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="b99e8d2" data-element_type="section" id="architecture" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-3db45fd elementor-column elementor-col-50 elementor-top-column" data-id="3db45fd" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-e14af09 elementor-widget elementor-widget-image" data-id="e14af09" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="549" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-1-1024x549.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-1-1024x549.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-1-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-1-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0157-1.jpg 1536w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-17dde94 elementor-column elementor-col-50 elementor-top-column" data-id="17dde94" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6691752 elementor-widget elementor-widget-heading" data-id="6691752" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Architecture Visualization - Minicity (for a BCAS project)</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b888f9 elementor-widget elementor-widget-text-editor" data-id="1b888f9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>This is an architecture visualization project of a upcoming shopping complex called &#8220;Mini City&#8221;.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4e489c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="4e489c5" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1930d8e elementor-column elementor-col-100 elementor-top-column" data-id="1930d8e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4577842 elementor-widget elementor-widget-image-gallery" data-id="4577842" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-6 {
+				margin: auto;
+			}
+			#gallery-6 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 25%;
+			}
+			#gallery-6 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-6 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-6' class='gallery galleryid-27 gallery-columns-4 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="4577842" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1.jpg'><img width="300" height="161" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1-300x161.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1-1024x549.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_057-1.jpg 1536w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="4577842" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8.jpg'><img width="300" height="161" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8-300x161.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8-1024x550.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0164-8.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="4577842" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2.jpg'><img width="300" height="161" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2-300x161.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2-1024x550.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0158-2.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="4577842" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5.jpg'><img width="300" height="161" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5-300x161.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5-768x412.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5-1024x550.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0161-5.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-fcb5b97 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="fcb5b97" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-9614746 elementor-column elementor-col-20 elementor-top-column" data-id="9614746" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b82161d elementor-widget elementor-widget-image" data-id="b82161d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Unreal_Engine_Logo-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-436c76b elementor-column elementor-col-20 elementor-top-column" data-id="436c76b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d8a8342 elementor-widget elementor-widget-image" data-id="d8a8342" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-3.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-8836feb elementor-column elementor-col-20 elementor-top-column" data-id="8836feb" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-40ee95b elementor-widget elementor-widget-image" data-id="40ee95b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-4-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-4-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-4-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-4.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-ec0aa04 elementor-column elementor-col-20 elementor-top-column" data-id="ec0aa04" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-39d2fa5 elementor-widget elementor-widget-image" data-id="39d2fa5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="300" height="79" src="http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender-300x79.png" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender-300x79.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Logo_Blender.png 400w" sizes="(max-width: 300px) 100vw, 300px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-a934179 elementor-column elementor-col-20 elementor-top-column" data-id="a934179" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-5182ed0 elementor-widget elementor-widget-image" data-id="5182ed0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-10.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4861be6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="4861be6" data-element_type="section" id="slacsn" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-79edce3 elementor-column elementor-col-50 elementor-top-column" data-id="79edce3" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-59d2bed elementor-widget elementor-widget-image" data-id="59d2bed" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="576" src="http://localhost/wordpress/wp-content/uploads/2019/02/slacsn-1024x576.jpg" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/slacsn-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/slacsn-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/slacsn-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/slacsn.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-7f1a64b elementor-column elementor-col-50 elementor-top-column" data-id="7f1a64b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-49a852d elementor-widget elementor-widget-heading" data-id="49a852d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">slacsn.org</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3f1ab21 elementor-widget elementor-widget-text-editor" data-id="3f1ab21" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>I&#8217;ve been part of the team to create, slacsn.org, the official website of Sri Lanka Cardio thoracic Network </p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-84ee6fe elementor-widget elementor-widget-button" data-id="84ee6fe" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="slacsn.org" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Go to slacsn.org</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b43d18a elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="b43d18a" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0e71f3b elementor-column elementor-col-33 elementor-top-column" data-id="0e71f3b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8227007 elementor-widget elementor-widget-image" data-id="8227007" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="150" height="150" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-13.png 400w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f79bbcf elementor-column elementor-col-33 elementor-top-column" data-id="f79bbcf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-abaed7b elementor-widget elementor-widget-image" data-id="abaed7b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-14-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-9681999 elementor-column elementor-col-33 elementor-top-column" data-id="9681999" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-1a54484 elementor-widget elementor-widget-image" data-id="1a54484" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="400" height="400" src="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12.png" class="attachment-large size-large" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12.png 400w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2019/02/Untitled-12-300x300.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0046d87 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="0046d87" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-f5759f2 elementor-column elementor-col-100 elementor-top-column" data-id="f5759f2" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b0f7d08 elementor-widget elementor-widget-heading" data-id="b0f7d08" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Graphic Designing Projects</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-aeebb72 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible elementor-section elementor-top-section" data-id="aeebb72" data-element_type="section" id="graphic-designing" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-88d5a27 elementor-column elementor-col-100 elementor-top-column" data-id="88d5a27" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d70fc1e elementor-widget elementor-widget-image-gallery" data-id="d70fc1e" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			
+		<style type="text/css">
+			#gallery-7 {
+				margin: auto;
+			}
+			#gallery-7 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 33%;
+			}
+			#gallery-7 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-7 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		</style>
+		<div id='gallery-7' class='gallery galleryid-27 gallery-columns-3 gallery-size-medium'><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/final02.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/final02-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/final02-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/final02-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/final02-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/final02.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/finadsal.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/finadsal-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/finadsal-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/finadsal-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/finadsal-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/finadsal.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/final05.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/final05-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/final05-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/final05-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/final05-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/final05.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/final204.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/final204-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/final204-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/final204-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/final204-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/final204.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/ss.jpg'><img width="300" height="161" src="http://localhost/wordpress/wp-content/uploads/2019/02/ss-300x161.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/ss-300x161.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/ss-768x413.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/ss-1024x550.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/ss.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render02_ps.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/wala1.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/wala1-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/wala1-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/wala1-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/wala1-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/wala1.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal.jpg'><img width="300" height="204" src="http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal-300x204.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal-300x204.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal-768x523.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal-1024x698.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/cakefinal.jpg 1365w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/IMG_0546-1.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render_17.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render_17-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render_17-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render_17-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render_17-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render_17.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render_01_comp_final-Copy.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render_04_comp_final-Copy.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render01_ps.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render03_ps.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/Complete-001.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/final.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/final-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/final-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/final-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/final-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/final.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render_03_human.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/01/img2.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/01/img2-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/01/img2-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/01/img2.jpg 768w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/render2.jpg'><img width="300" height="169" src="http://localhost/wordpress/wp-content/uploads/2019/02/render2-300x169.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/render2-300x169.jpg 300w, http://localhost/wordpress/wp-content/uploads/2019/02/render2-768x432.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/render2-1024x576.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/render2.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon portrait'>
+				<a data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="d70fc1e" href='http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01.jpg'><img width="212" height="300" src="http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-212x300.jpg" class="attachment-medium size-medium" alt="" srcset="http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-212x300.jpg 212w, http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-768x1087.jpg 768w, http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-724x1024.jpg 724w, http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-1024x1449.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01-763x1080.jpg 763w, http://localhost/wordpress/wp-content/uploads/2019/02/poster_final_01.jpg 1280w" sizes="(max-width: 212px) 100vw, 212px" /></a>
+			</dt></dl>
+			<br style='clear: both' />
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		  </div>
+    </div>
+        </div>
+    </div>
+
+	<div  class='footer footer-simple'>
+    <div  class='footer-content center-xs'>
+        <div class="gridContainer">
+	        <div class="row middle-xs footer-content-row">
+	            <div class="footer-content-col col-xs-12">
+	                    <p  class="copyright">&copy;&nbsp;&nbsp;2020&nbsp;lazzy07.&nbsp;Built using WordPress and the <a target="_blank" href="https://extendthemes.com/go/built-with-highlight/" class="mesmerize-theme-link">Highlight Theme</a></p>	            </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*=#]:not([href=#])","autoSelectorMenuLinks":"true","excludeSelector":"a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion]","scrollSpeed":800,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":"180","dummyOffset":"false","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.6.6'></script>
+<script type='text/javascript'  defer="defer" src='http://localhost/wordpress/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='http://localhost/wordpress/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'  defer="defer" src='http://localhost/wordpress/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.0.13'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/highlight/assets/js/theme-child.js'></script>
+<script type='text/javascript'  defer="defer" src='http://localhost/wordpress/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.8.5'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6'></script>
+<script type='text/javascript'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.8.5","urls":{"assets":"http:\/\/localhost\/wordpress\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes"},"editorPreferences":[]},"post":{"id":27,"title":"Projects","excerpt":""}};
+</script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.8.5'></script>
+</body>
+</html>
